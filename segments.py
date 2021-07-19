@@ -3,8 +3,9 @@ import requests
 import logging
 import threading
 
-API_KEY  = "ei_d5a23c93d5f56958c7ba7cb08c94c3d83992f5ad89f81f86de62f451c6965901"
-projectId = 39350
+API_KEY = "<Insert Edge Impulse API Key here from the Dashboard > Keys"
+projectId = "<Your project ID, can be found at Edge Impulse dashboard"
+
 
 headers = {
     "Accept": "application/json",
