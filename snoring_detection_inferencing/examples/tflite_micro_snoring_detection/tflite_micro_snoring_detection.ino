@@ -211,7 +211,7 @@ void setup()
   Serial.begin(115200);
 
   pinMode(greenLED, OUTPUT);
-  pinMode(greenLED, LOW); // HIGH is off, LOW is on
+  pinMode(greenLED, LOW); 
   pinMode(vibratorPin, OUTPUT);  // sets the pin as output
 
   // summary of inferencing settings (from model_metadata.h)
@@ -279,14 +279,14 @@ void loop()
         }
         //ei_printf("\n");
         ei_printf("Snoring\n");
-        pinMode(greenLED, HIGH); // LOW is on
+        pinMode(greenLED, HIGH); 
         if (count >= 5) {
           ei_printf("Trigger vibration motor\n");
           alert = true;
         }
       }  else {
         ei_printf("Noise\n");
-        pinMode(greenLED, LOW); // HIGH is off
+        pinMode(greenLED, LOW); 
         alert = false;
       }
 
